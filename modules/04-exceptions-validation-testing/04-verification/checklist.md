@@ -1,0 +1,2 @@
+- [ ] Happy path and failure path are covered
+- [ ] Assertions describe business behavior

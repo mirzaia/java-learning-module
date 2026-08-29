@@ -1,0 +1,2 @@
+- [ ] Invalid product and money values are rejected
+- [ ] Domain types have focused responsibilities

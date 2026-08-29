@@ -1,0 +1,2 @@
+- [ ] Invalid requests return field-level errors
+- [ ] Pagination metadata is present

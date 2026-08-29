@@ -1,0 +1,2 @@
+- [ ] Java reports version 17
+- [ ] `./gradlew test` completes

@@ -1,0 +1,3 @@
+- [ ] Unauthenticated writes are rejected
+- [ ] Health endpoint is available
+- [ ] Secrets are externalized

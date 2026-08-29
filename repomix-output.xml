@@ -1,0 +1,2128 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+gradle/
+  wrapper/
+    gradle-wrapper.jar
+    gradle-wrapper.properties
+modules/
+  00-setup-java-gradle/
+    01-objectives/
+      README.md
+    02-concepts/
+      01-jvm-and-gradle.md
+      README.md
+    03-exercises/
+      README.md
+    04-verification/
+      checklist.md
+    README.md
+  01-java-refresh-oop/
+    01-objectives/
+      README.md
+    02-concepts/
+      01-records-and-invariants.java
+      README.md
+    03-exercises/
+      README.md
+    04-verification/
+      checklist.md
+    src/
+      main/
+        java/
+          com/
+            learning/
+              java/
+                orders/
+                  domain/
+                    Customer.java
+                    Money.java
+                    Order.java
+                    OrderItem.java
+                    OrderStatus.java
+                    Product.java
+    README.md
+  02-collections-generics-optionals/
+    01-objectives/
+      README.md
+    02-concepts/
+      01-lookup-and-optionals.java
+      README.md
+    03-exercises/
+      src/
+        main/
+          java/
+            com/
+              learning/
+                java/
+                  exercises/
+                    OrderLookup.java
+      README.md
+    04-verification/
+      checklist.md
+    solutions/
+      src/
+        main/
+          java/
+            com/
+              learning/
+                java/
+                  solutions/
+                    OrderLookup.java
+    README.md
+  03-functional-java-streams/
+    01-objectives/
+      README.md
+    02-concepts/
+      01-stream-pipeline.java
+      README.md
+    03-exercises/
+      src/
+        main/
+          java/
+            com/
+              learning/
+                java/
+                  exercises/
+                    OrderStreams.java
+      README.md
+    04-verification/
+      checklist.md
+    solutions/
+      src/
+        main/
+          java/
+            com/
+              learning/
+                java/
+                  solutions/
+                    OrderStreams.java
+    README.md
+  04-exceptions-validation-testing/
+    01-objectives/
+      README.md
+    02-concepts/
+      01-validation-boundary.java
+      README.md
+    03-exercises/
+      src/
+        main/
+          java/
+            com/
+              learning/
+                java/
+                  exercises/
+                    OrderValidator.java
+      README.md
+    04-verification/
+      checklist.md
+    solutions/
+      src/
+        main/
+          java/
+            com/
+              learning/
+                java/
+                  solutions/
+                    OrderValidator.java
+    README.md
+  05-concurrency-and-jvm-basics/
+    01-objectives/
+      README.md
+    02-concepts/
+      01-executor-ownership.java
+      README.md
+    03-exercises/
+      src/
+        main/
+          java/
+            com/
+              learning/
+                java/
+                  exercises/
+                    NotificationProcessor.java
+      README.md
+    04-verification/
+      checklist.md
+    solutions/
+      src/
+        main/
+          java/
+            com/
+              learning/
+                java/
+                  solutions/
+                    NotificationProcessor.java
+    README.md
+  06-spring-boot-rest-api/
+    01-objectives/
+      README.md
+    02-concepts/
+      01-controller-flow.java
+      README.md
+    03-exercises/
+      README.md
+    04-verification/
+      checklist.md
+    src/
+      main/
+        java/
+          com/
+            learning/
+              java/
+                orders/
+                  api/
+                    OrderController.java
+                    OrdersApiApplication.java
+    README.md
+  07-persistence-hibernate-jpa/
+    01-objectives/
+      README.md
+    02-concepts/
+      01-entity-and-repository.java
+      README.md
+    03-exercises/
+      README.md
+    04-verification/
+      checklist.md
+    src/
+      main/
+        java/
+          com/
+            learning/
+              java/
+                orders/
+                  persistence/
+                    OrderEntity.java
+                    OrderJpaRepository.java
+    README.md
+  08-enterprise-api-quality/
+    01-objectives/
+      README.md
+    02-concepts/
+      01-validation-and-errors.java
+      README.md
+    03-exercises/
+      README.md
+    04-verification/
+      checklist.md
+    src/
+      main/
+        java/
+          com/
+            learning/
+              java/
+                orders/
+                  quality/
+                    ApiExceptionHandler.java
+                    CreateOrderRequest.java
+    README.md
+  09-security-observability-production/
+    01-objectives/
+      README.md
+    02-concepts/
+      01-authentication-vs-authorization.java
+      README.md
+    03-exercises/
+      README.md
+    04-verification/
+      checklist.md
+    src/
+      main/
+        java/
+          com/
+            learning/
+              java/
+                orders/
+                  security/
+                    SecurityConfiguration.java
+    README.md
+  10-android-java-orientation/
+    01-objectives/
+      README.md
+    02-concepts/
+      01-order-screen-state.java
+      README.md
+    03-exercises/
+      README.md
+    04-verification/
+      checklist.md
+    README.md
+  11-big-data-java-orientation/
+    01-objectives/
+      README.md
+    02-concepts/
+      01-local-to-distributed.java
+      README.md
+    03-exercises/
+      src/
+        main/
+          java/
+            com/
+              learning/
+                java/
+                  exercises/
+                    OrderEventAnalytics.java
+      README.md
+    04-verification/
+      checklist.md
+    solutions/
+      src/
+        main/
+          java/
+            com/
+              learning/
+                java/
+                  solutions/
+                    OrderEventAnalytics.java
+    README.md
+  12-capstone-enterprise-orders/
+    01-objectives/
+      README.md
+    02-concepts/
+      01-hexagonal-seam.java
+      README.md
+    03-exercises/
+      README.md
+    04-verification/
+      checklist.md
+    src/
+      main/
+        java/
+          com/
+            learning/
+              java/
+                orders/
+                  api/
+                    CapstoneApplication.java
+                    OrderApiController.java
+                    OrderBeans.java
+                  domain/
+                    Customer.java
+                    Money.java
+                    Order.java
+                    OrderItem.java
+                    OrderStatus.java
+                    Product.java
+                  service/
+                    InMemoryOrderRepository.java
+                    OrderRepository.java
+                    OrderService.java
+      test/
+        java/
+          com/
+            learning/
+              java/
+                orders/
+                  OrderServiceTest.java
+    README.md
+.gitignore
+BACKGROUND.md
+build.gradle.kts
+CLAUDE.md
+gradlew
+gradlew.bat
+plan-implementation-java-learning-module.md
+README.md
+settings.gradle.kts
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="gradle/wrapper/gradle-wrapper.properties">
+distributionBase=GRADLE_USER_HOME
+distributionPath=wrapper/dists
+distributionUrl=https\://services.gradle.org/distributions/gradle-8.7-bin.zip
+networkTimeout=10000
+zipStoreBase=GRADLE_USER_HOME
+zipStorePath=wrapper/dists
+</file>
+
+<file path="modules/00-setup-java-gradle/01-objectives/README.md">
+# Objectives
+Verify JDK 17, understand JVM/JDK/JRE, and run the Gradle wrapper.
+</file>
+
+<file path="modules/00-setup-java-gradle/02-concepts/01-jvm-and-gradle.md">
+# JVM and Gradle in one build
+
+`javac` compiles `.java` source into platform-independent `.class` bytecode. The JVM loads that bytecode and executes it. A JDK includes the JVM plus developer tools such as `javac`; a JRE is the runtime portion.
+
+Gradle reads `build.gradle.kts`, resolves declared libraries, compiles source, and runs tests. The wrapper pins the Gradle version in `gradle/wrapper/gradle-wrapper.properties`, which makes the build reproducible across developer machines and CI.
+
+```text
+Order.java --javac--> Order.class --JVM--> running process
+                  ^
+             Gradle orchestrates this step and test execution
+```
+
+The Java toolchain in the root build asks Gradle for Java 17 even if a developer’s shell defaults to another version.
+</file>
+
+<file path="modules/00-setup-java-gradle/02-concepts/README.md">
+# Concepts
+The JVM executes bytecode; the JDK adds compiler and tools; the wrapper pins build behavior for the project.
+</file>
+
+<file path="modules/00-setup-java-gradle/03-exercises/README.md">
+# Exercise
+Run `java -version`, `./gradlew test`, and import the project into an IDE.
+</file>
+
+<file path="modules/00-setup-java-gradle/04-verification/checklist.md">
+- [ ] Java reports version 17
+- [ ] `./gradlew test` completes
+</file>
+
+<file path="modules/00-setup-java-gradle/README.md">
+# Module 00: Java and Gradle Setup
+
+## Why this module exists
+
+Before writing application code, verify that the JDK, compiler, and build tool agree on Java 17. Gradle is not just a command runner: it describes how source code becomes a tested, repeatable artifact.
+
+## Prerequisites
+
+None. This is the starting point.
+
+## What you will learn
+
+- The distinction between the JDK, JRE, JVM, source code, and bytecode.
+- Why a project uses a Gradle Wrapper instead of relying on a globally installed Gradle version.
+- The standard `src/main/java` and `src/test/java` layout.
+
+## Learn by doing
+
+1. Run `java -version` and confirm Java 17.
+2. Run `./gradlew test` from the project root.
+3. Open [build.gradle.kts](../../build.gradle.kts) and find the Java toolchain declaration.
+4. Import the root folder into IntelliJ IDEA as a Gradle project.
+
+## Success looks like
+
+Gradle reports successful tests and your IDE recognises Java source roots. Continue to [Module 01](../01-java-refresh-oop/README.md).
+</file>
+
+<file path="modules/01-java-refresh-oop/01-objectives/README.md">
+# Objectives
+Model an order domain with records, classes, enums, interfaces, packages, and validation.
+</file>
+
+<file path="modules/01-java-refresh-oop/02-concepts/01-records-and-invariants.java">
+package examples;
+
+import java.math.BigDecimal;
+
+// A record gives us final fields, accessors, equals/hashCode, and toString.
+record Price(BigDecimal amount, String currency) {
+    Price {
+        // Constructor validation prevents invalid values from ever becoming a Price.
+        if (amount == null || amount.signum() < 0) {
+            throw new IllegalArgumentException("amount must not be negative");
+        }
+    }
+}
+
+enum ShippingStatus { NEW, SHIPPED, CANCELLED }
+
+final class RecordsAndInvariants {
+    static void main(String[] args) {
+        // BigDecimal is preferred to double for values such as money.
+        Price price = new Price(new BigDecimal("19.99"), "USD");
+        System.out.println(price.amount());
+    }
+}
+</file>
+
+<file path="modules/01-java-refresh-oop/02-concepts/README.md">
+# Concepts
+Records are compact immutable data carriers. Interfaces define behavior; enums model finite state; package visibility controls boundaries.
+</file>
+
+<file path="modules/01-java-refresh-oop/03-exercises/README.md">
+# Exercise
+Extend the supplied `Product`, `Customer`, `Money`, and `OrderStatus` types with an `Order` aggregate.
+</file>
+
+<file path="modules/01-java-refresh-oop/04-verification/checklist.md">
+- [ ] Invalid product and money values are rejected
+- [ ] Domain types have focused responsibilities
+</file>
+
+<file path="modules/01-java-refresh-oop/src/main/java/com/learning/java/orders/domain/Customer.java">
+package com.learning.java.orders.domain;
+
+public record Customer(String id, String email) {
+    public Customer { if (id == null || id.isBlank() || email == null || !email.contains("@")) throw new IllegalArgumentException("Invalid customer"); }
+}
+</file>
+
+<file path="modules/01-java-refresh-oop/src/main/java/com/learning/java/orders/domain/Money.java">
+package com.learning.java.orders.domain;
+
+import java.math.BigDecimal;
+import java.util.Objects;
+
+/** Value object: a money amount is meaningful only together with its currency. */
+public record Money(BigDecimal amount, String currency) {
+    public Money {
+        Objects.requireNonNull(amount, "amount");
+        Objects.requireNonNull(currency, "currency");
+        // Reject invalid values at creation time so every Money instance is safe to use later.
+        if (amount.signum() < 0 || currency.isBlank()) throw new IllegalArgumentException("Invalid money");
+    }
+}
+</file>
+
+<file path="modules/01-java-refresh-oop/src/main/java/com/learning/java/orders/domain/Order.java">
+package com.learning.java.orders.domain;
+
+import java.math.BigDecimal;
+import java.util.List;
+import java.util.UUID;
+
+/** Aggregate root that owns its order lines and lifecycle state. */
+public record Order(String id, Customer customer, List<OrderItem> items, OrderStatus status) {
+    public Order {
+        if (id == null || id.isBlank()) id = UUID.randomUUID().toString();
+        if (customer == null || items == null || items.isEmpty()) throw new IllegalArgumentException("Order requires customer and items");
+        // A defensive copy prevents callers from modifying an order through their original list.
+        items = List.copyOf(items);
+        if (status == null) status = OrderStatus.NEW;
+    }
+    /** Decimal arithmetic avoids floating-point rounding errors in currency totals. */
+    public BigDecimal total() { return items.stream().map(OrderItem::total).reduce(BigDecimal.ZERO, BigDecimal::add); }
+}
+</file>
+
+<file path="modules/01-java-refresh-oop/src/main/java/com/learning/java/orders/domain/OrderItem.java">
+package com.learning.java.orders.domain;
+
+import java.math.BigDecimal;
+
+public record OrderItem(Product product, int quantity) {
+    public OrderItem { if (product == null || quantity < 1) throw new IllegalArgumentException("Quantity must be positive"); }
+    public BigDecimal total() { return product.price().amount().multiply(BigDecimal.valueOf(quantity)); }
+}
+</file>
+
+<file path="modules/01-java-refresh-oop/src/main/java/com/learning/java/orders/domain/OrderStatus.java">
+package com.learning.java.orders.domain;
+
+public enum OrderStatus { NEW, PAID, SHIPPED, CANCELLED }
+</file>
+
+<file path="modules/01-java-refresh-oop/src/main/java/com/learning/java/orders/domain/Product.java">
+package com.learning.java.orders.domain;
+
+public record Product(String id, String name, Money price) {
+    public Product { if (id == null || id.isBlank() || name == null || name.isBlank()) throw new IllegalArgumentException("Product fields are required"); }
+}
+</file>
+
+<file path="modules/01-java-refresh-oop/README.md">
+# Module 01: Java Refresh and Object-Oriented Modelling
+
+## Why this module exists
+
+Backend code is easier to change when its types mirror the business vocabulary. The order domain in `src/main/java` models products, customers, order lines, money, and order state using Java 17 records and an enum.
+
+## Prerequisites
+
+- Module 00: Java 17 and Gradle setup.
+
+## What you will learn
+
+- When a `record` is a better fit than a mutable class.
+- How constructor validation protects an aggregate from invalid state.
+- Why an enum is safer than arbitrary strings for an order lifecycle.
+- How package boundaries communicate ownership.
+
+## Learn by doing
+
+Read `Money`, `Product`, and `Order` in that order. Create an order with two `OrderItem` values, call `total()`, then try an invalid quantity and observe the exception.
+
+## Key idea
+
+An `Order` owns its list of lines. The constructor takes an immutable copy so callers cannot modify an already-created order through a shared list reference.
+
+## Next
+
+Continue to [Module 02](../02-collections-generics-optionals/README.md) to store and retrieve those domain objects safely.
+</file>
+
+<file path="modules/02-collections-generics-optionals/01-objectives/README.md">
+# Objectives
+Choose collection types, constrain generic APIs, and represent missing values safely with `Optional`.
+</file>
+
+<file path="modules/02-collections-generics-optionals/02-concepts/01-lookup-and-optionals.java">
+package examples;
+
+import java.util.Map;
+import java.util.Optional;
+
+final class LookupAndOptionals {
+    static Optional<String> findCustomerEmail(Map<String, String> emails, String customerId) {
+        // get() can return null; Optional makes that absence visible in the return type.
+        return Optional.ofNullable(emails.get(customerId));
+    }
+
+    static void main(String[] args) {
+        Map<String, String> emails = Map.of("c-1", "learner@example.com");
+        // orElse is a deliberate fallback, not a null check hidden in the caller.
+        System.out.println(findCustomerEmail(emails, "missing").orElse("not found"));
+    }
+}
+</file>
+
+<file path="modules/02-collections-generics-optionals/02-concepts/README.md">
+# Concepts
+Prefer `List` for order lines, `Map` for keyed lookup, immutable copies at boundaries, and `Optional` for absent results.
+</file>
+
+<file path="modules/02-collections-generics-optionals/03-exercises/src/main/java/com/learning/java/exercises/OrderLookup.java">
+package com.learning.java.exercises;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+
+/** Starter exercise: implement lookup without returning null or mutable internals. */
+public final class OrderLookup<T> {
+    private final Map<String, T> orders;
+
+    public OrderLookup(Map<String, T> orders) {
+        // Copy at the boundary: later changes to the caller's map must not affect this lookup.
+        this.orders = Map.copyOf(orders);
+    }
+    public Optional<T> findById(String id) { return Optional.empty(); }
+    public List<T> all() { return List.of(); }
+}
+</file>
+
+<file path="modules/02-collections-generics-optionals/03-exercises/README.md">
+# Exercise
+Complete `src/main/java/com/learning/java/exercises/OrderLookup.java`. It must return an `Optional` for a missing ID and immutable results. Compare your work with `solutions/src/main/java` only after attempting it.
+</file>
+
+<file path="modules/02-collections-generics-optionals/04-verification/checklist.md">
+- [ ] No null is returned for a missing order
+- [ ] Callers cannot mutate stored collections
+</file>
+
+<file path="modules/02-collections-generics-optionals/solutions/src/main/java/com/learning/java/solutions/OrderLookup.java">
+package com.learning.java.solutions;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+
+public final class OrderLookup<T> {
+    private final Map<String, T> orders;
+    public OrderLookup(Map<String, T> orders) { this.orders = Map.copyOf(orders); }
+    public Optional<T> findById(String id) { return Optional.ofNullable(orders.get(id)); }
+    public List<T> all() { return List.copyOf(orders.values()); }
+}
+</file>
+
+<file path="modules/02-collections-generics-optionals/README.md">
+# Module 02: Collections, Generics, and Optional
+
+## Why this module exists
+
+Most backend services spend more time moving groups of objects than creating individual objects. This module shows how `Map`, `List`, generics, immutable copies, and `Optional` make that movement explicit and safe.
+
+## Prerequisites
+
+- Module 01: records and the order domain.
+
+## What you will learn
+
+- Use `Map<String, T>` for fast lookup by an identifier.
+- Use `List<T>` when ordering matters.
+- Use a generic type parameter to reuse a repository-shaped utility without losing type safety.
+- Return `Optional<T>` for a genuinely absent value instead of returning `null`.
+
+## Learn by doing
+
+Complete `03-exercises/src/main/java/com/learning/java/exercises/OrderLookup.java`. Start with `findById`, then return an immutable list from `all`. Compare only afterwards with `solutions/`.
+
+## Common pitfall
+
+`Map.copyOf` freezes the map structure, but it does not make mutable objects inside it immutable. Treat domain values as immutable too.
+
+## Next
+
+Continue to [Module 03](../03-functional-java-streams/README.md).
+</file>
+
+<file path="modules/03-functional-java-streams/01-objectives/README.md">
+# Objectives
+Use lambdas, method references, stream pipelines, and collectors for order analytics.
+</file>
+
+<file path="modules/03-functional-java-streams/02-concepts/01-stream-pipeline.java">
+package examples;
+
+import java.math.BigDecimal;
+import java.util.List;
+
+final class StreamPipeline {
+    record Sale(BigDecimal total, boolean paid) { }
+
+    static BigDecimal paidRevenue(List<Sale> sales) {
+        return sales.stream()
+                // Intermediate operation: keep only business-relevant events.
+                .filter(Sale::paid)
+                // Transform each Sale into the number we want to aggregate.
+                .map(Sale::total)
+                // The identity defines the answer for an empty list.
+                .reduce(BigDecimal.ZERO, BigDecimal::add);
+    }
+}
+</file>
+
+<file path="modules/03-functional-java-streams/02-concepts/README.md">
+# Concepts
+Separate stream transformation (`map`, `filter`) from terminal aggregation (`toList`, `groupingBy`, `reduce`).
+</file>
+
+<file path="modules/03-functional-java-streams/03-exercises/src/main/java/com/learning/java/exercises/OrderStreams.java">
+package com.learning.java.exercises;
+
+import java.math.BigDecimal;
+import java.util.List;
+import java.util.function.Predicate;
+
+public final class OrderStreams {
+    public record Sale(String customerId, BigDecimal total, boolean paid) { }
+    // Return a new list; do not modify the caller's collection inside a stream pipeline.
+    public List<Sale> filterPaid(List<Sale> sales) { return List.of(); }
+    public BigDecimal revenue(List<Sale> sales, Predicate<Sale> condition) { return BigDecimal.ZERO; }
+}
+</file>
+
+<file path="modules/03-functional-java-streams/03-exercises/README.md">
+# Exercise
+Complete `src/main/java/com/learning/java/exercises/OrderStreams.java`: filter paid sales and calculate revenue with a predicate. A reference implementation is in `solutions/src/main/java`.
+</file>
+
+<file path="modules/03-functional-java-streams/04-verification/checklist.md">
+- [ ] Pipelines are side-effect free
+- [ ] Empty input has a defined result
+</file>
+
+<file path="modules/03-functional-java-streams/solutions/src/main/java/com/learning/java/solutions/OrderStreams.java">
+package com.learning.java.solutions;
+
+import java.math.BigDecimal;
+import java.util.List;
+import java.util.function.Predicate;
+
+public final class OrderStreams {
+    public record Sale(String customerId, BigDecimal total, boolean paid) { }
+    public List<Sale> filterPaid(List<Sale> sales) { return sales.stream().filter(Sale::paid).toList(); }
+    public BigDecimal revenue(List<Sale> sales, Predicate<Sale> condition) { return sales.stream().filter(condition).map(Sale::total).reduce(BigDecimal.ZERO, BigDecimal::add); }
+}
+</file>
+
+<file path="modules/03-functional-java-streams/README.md">
+# Module 03: Functional Java and Streams
+
+## Why this module exists
+
+Streams make transformations over order data compact and composable when each step has one clear purpose. They are not automatically better than loops; they are best for a readable pipeline of filtering, mapping, grouping, or reducing.
+
+## Prerequisites
+
+- Module 02: collections and generics.
+
+## What you will learn
+
+- Lambdas and method references.
+- Intermediate operations such as `filter` and `map`.
+- Terminal operations such as `toList` and `reduce`.
+- Why monetary totals start from `BigDecimal.ZERO`.
+
+## Learn by doing
+
+Implement `filterPaid` and `revenue` in `OrderStreams`. Add a sale that is not paid to ensure the predicate affects the total.
+
+## Common pitfall
+
+Do not mutate shared variables inside a stream pipeline. Return transformed data instead.
+
+## Next
+
+Continue to [Module 04](../04-exceptions-validation-testing/README.md).
+</file>
+
+<file path="modules/04-exceptions-validation-testing/01-objectives/README.md">
+# Objectives
+Design useful exceptions, validate boundaries, and write focused JUnit 5 tests.
+</file>
+
+<file path="modules/04-exceptions-validation-testing/02-concepts/01-validation-boundary.java">
+package examples;
+
+import java.math.BigDecimal;
+
+final class ValidationBoundary {
+    static void validateTotal(BigDecimal total) {
+        // This is a caller error, so an unchecked argument exception is appropriate.
+        if (total == null || total.signum() <= 0) {
+            throw new IllegalArgumentException("total must be positive");
+        }
+    }
+
+    static void main(String[] args) {
+        validateTotal(new BigDecimal("12.50"));
+        // validateTotal(BigDecimal.ZERO); // Try this to see the contract fail fast.
+    }
+}
+</file>
+
+<file path="modules/04-exceptions-validation-testing/02-concepts/README.md">
+# Concepts
+Use checked exceptions for recoverable contracts and unchecked exceptions for invalid state. Test behavior, not implementation details.
+</file>
+
+<file path="modules/04-exceptions-validation-testing/03-exercises/src/main/java/com/learning/java/exercises/OrderValidator.java">
+package com.learning.java.exercises;
+
+import java.math.BigDecimal;
+
+public final class OrderValidator {
+    // Validation makes invalid input fail where it enters the application, not later in a workflow.
+    public void validate(String customerId, BigDecimal total) { /* Throw IllegalArgumentException for invalid input. */ }
+}
+</file>
+
+<file path="modules/04-exceptions-validation-testing/03-exercises/README.md">
+# Exercise
+Complete `src/main/java/com/learning/java/exercises/OrderValidator.java`, then add JUnit tests for blank customers and zero/negative totals. Check the reference solution after testing your version.
+</file>
+
+<file path="modules/04-exceptions-validation-testing/04-verification/checklist.md">
+- [ ] Happy path and failure path are covered
+- [ ] Assertions describe business behavior
+</file>
+
+<file path="modules/04-exceptions-validation-testing/solutions/src/main/java/com/learning/java/solutions/OrderValidator.java">
+package com.learning.java.solutions;
+
+import java.math.BigDecimal;
+
+public final class OrderValidator {
+    public void validate(String customerId, BigDecimal total) {
+        if (customerId == null || customerId.isBlank()) throw new IllegalArgumentException("customerId is required");
+        if (total == null || total.signum() <= 0) throw new IllegalArgumentException("total must be positive");
+    }
+}
+</file>
+
+<file path="modules/04-exceptions-validation-testing/README.md">
+# Module 04: Exceptions, Validation, and Testing
+
+## Why this module exists
+
+An API or service should reject invalid requests at its boundary, with a message that lets callers fix the input. Tests make those rules executable and protect them when the implementation changes.
+
+## Prerequisites
+
+- Modules 01–03.
+
+## What you will learn
+
+- The difference between expected validation failures and infrastructure failures.
+- When `IllegalArgumentException` communicates an invalid caller input.
+- The arrange-act-assert shape of a focused JUnit test.
+
+## Learn by doing
+
+Complete `OrderValidator`, then write tests for a blank customer, a zero total, and a valid order. The valid case should not throw.
+
+## Key idea
+
+Validation belongs close to the boundary where bad data first enters the system, rather than allowing it to create a broken domain object later.
+
+## Next
+
+Continue to [Module 05](../05-concurrency-and-jvm-basics/README.md).
+</file>
+
+<file path="modules/05-concurrency-and-jvm-basics/01-objectives/README.md">
+# Objectives
+Understand threads, executors, futures, visibility, and basic JVM memory vocabulary.
+</file>
+
+<file path="modules/05-concurrency-and-jvm-basics/02-concepts/01-executor-ownership.java">
+package examples;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+final class ExecutorOwnership {
+    static void main(String[] args) {
+        ExecutorService executor = Executors.newFixedThreadPool(2);
+        try {
+            // The executor owns worker threads; submitting work is cheaper than creating threads per task.
+            executor.submit(() -> System.out.println("send notification"));
+        } finally {
+            // Always release resources owned by this scope, even when a task fails.
+            executor.shutdown();
+        }
+    }
+}
+</file>
+
+<file path="modules/05-concurrency-and-jvm-basics/02-concepts/README.md">
+# Concepts
+Prefer executors over manually managed threads; make shared state immutable or synchronize access explicitly.
+</file>
+
+<file path="modules/05-concurrency-and-jvm-basics/03-exercises/src/main/java/com/learning/java/exercises/NotificationProcessor.java">
+package com.learning.java.exercises;
+
+import java.util.List;
+import java.util.concurrent.ExecutorService;
+
+public final class NotificationProcessor {
+    /** The caller owns the executor lifecycle; this method only submits and collects work. */
+    public List<String> sendAll(List<String> orderIds, ExecutorService executor) {
+        return List.of(); // Submit each independent notification and preserve input order.
+    }
+}
+</file>
+
+<file path="modules/05-concurrency-and-jvm-basics/03-exercises/README.md">
+# Exercise
+Complete `src/main/java/com/learning/java/exercises/NotificationProcessor.java` using the supplied executor. Preserve the input order without mutable shared state. A solution is included under `solutions/`.
+</file>
+
+<file path="modules/05-concurrency-and-jvm-basics/04-verification/checklist.md">
+- [ ] Executor is shut down
+- [ ] Shared state has a clear ownership policy
+</file>
+
+<file path="modules/05-concurrency-and-jvm-basics/solutions/src/main/java/com/learning/java/solutions/NotificationProcessor.java">
+package com.learning.java.solutions;
+
+import java.util.List;
+import java.util.concurrent.ExecutorService;
+
+public final class NotificationProcessor {
+    public List<String> sendAll(List<String> orderIds, ExecutorService executor) {
+        try {
+            return executor.invokeAll(orderIds.stream().<java.util.concurrent.Callable<String>>map(id -> () -> "sent:" + id).toList())
+                    .stream().map(future -> {
+                        try { return future.get(); } catch (Exception exception) { throw new IllegalStateException(exception); }
+                    }).toList();
+        } catch (InterruptedException exception) {
+            Thread.currentThread().interrupt();
+            throw new IllegalStateException("Notification processing interrupted", exception);
+        }
+    }
+}
+</file>
+
+<file path="modules/05-concurrency-and-jvm-basics/README.md">
+# Module 05: Concurrency and JVM Basics
+
+## Why this module exists
+
+Order notifications are independent units of work, but running work concurrently introduces ordering, failure, and shared-state concerns. This module starts with a deterministic executor-based example before discussing larger async designs.
+
+## Prerequisites
+
+- Modules 01–04.
+
+## What you will learn
+
+- Why an `ExecutorService` is preferable to creating raw threads.
+- How `invokeAll` waits for a batch and preserves task order.
+- What interruption means and why an interrupt flag must be restored.
+- The difference between stack, heap, and garbage collection at a practical level.
+
+## Learn by doing
+
+Implement `NotificationProcessor.sendAll` using the passed executor. Use a fixed-size pool in a test and always shut it down in a `finally` block.
+
+## Next
+
+Continue to [Module 06](../06-spring-boot-rest-api/README.md).
+</file>
+
+<file path="modules/06-spring-boot-rest-api/01-objectives/README.md">
+# Objectives
+Design a Spring Boot HTTP API for orders with DTOs and explicit response codes.
+</file>
+
+<file path="modules/06-spring-boot-rest-api/02-concepts/01-controller-flow.java">
+package examples;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/orders") // All methods below start with /orders.
+class ControllerFlow {
+    @PostMapping
+    @ResponseStatus(HttpStatus.CREATED) // A new resource should return 201, not the default 200.
+    OrderResponse create(@RequestBody CreateOrderRequest request) {
+        // In a real application, call a service here instead of retaining state in the controller.
+        return new OrderResponse("o-1", request.customerId());
+    }
+
+    record CreateOrderRequest(String customerId) { }
+    record OrderResponse(String id, String customerId) { }
+}
+</file>
+
+<file path="modules/06-spring-boot-rest-api/02-concepts/README.md">
+# Concepts
+The planned API uses `GET /orders`, `GET /orders/{id}`, `POST /orders`, and `PATCH /orders/{id}/status`. Keep transport DTOs separate from domain records.
+</file>
+
+<file path="modules/06-spring-boot-rest-api/03-exercises/README.md">
+# Exercise
+Study `src/main/java/com/learning/java/orders/api/OrderController.java`, then replace its private map with an injected service. Add a `MockMvc` test for create, get, list, and status change before comparing your result to the provided reference controller.
+</file>
+
+<file path="modules/06-spring-boot-rest-api/04-verification/checklist.md">
+- [ ] Unknown IDs return 404
+- [ ] Create returns 201
+- [ ] JSON contracts are documented
+</file>
+
+<file path="modules/06-spring-boot-rest-api/src/main/java/com/learning/java/orders/api/OrderController.java">
+package com.learning.java.orders.api;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
+import java.math.BigDecimal;
+import java.util.*;
+
+/** HTTP adapter for the order use cases; later modules move state into a service and repository. */
+@RestController
+@RequestMapping("/orders")
+public final class OrderController {
+    private final Map<String, OrderResponse> orders = new LinkedHashMap<>();
+
+    // List.copyOf avoids exposing the controller's mutable map-backed collection to callers.
+    @GetMapping public List<OrderResponse> list() { return List.copyOf(orders.values()); }
+    @GetMapping("/{id}") public OrderResponse get(@PathVariable String id) { return Optional.ofNullable(orders.get(id)).orElseThrow(() -> new OrderNotFoundException(id)); }
+    @PostMapping @ResponseStatus(HttpStatus.CREATED) public OrderResponse create(@RequestBody CreateOrderRequest request) {
+        // IDs are generated by the server so clients cannot collide or overwrite existing orders.
+        var order = new OrderResponse(UUID.randomUUID().toString(), request.customerId(), request.total(), "NEW");
+        orders.put(order.id(), order); return order;
+    }
+    @PatchMapping("/{id}/status") public OrderResponse changeStatus(@PathVariable String id, @RequestBody StatusRequest request) {
+        var previous = get(id); var updated = new OrderResponse(previous.id(), previous.customerId(), previous.total(), request.status()); orders.put(id, updated); return updated;
+    }
+    public record CreateOrderRequest(String customerId, BigDecimal total) { }
+    public record StatusRequest(String status) { }
+    public record OrderResponse(String id, String customerId, BigDecimal total, String status) { }
+    @ResponseStatus(HttpStatus.NOT_FOUND) static final class OrderNotFoundException extends RuntimeException { OrderNotFoundException(String id) { super("Order not found: " + id); } }
+}
+</file>
+
+<file path="modules/06-spring-boot-rest-api/src/main/java/com/learning/java/orders/api/OrdersApiApplication.java">
+package com.learning.java.orders.api;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class OrdersApiApplication {
+    public static void main(String[] args) { SpringApplication.run(OrdersApiApplication.class, args); }
+}
+</file>
+
+<file path="modules/06-spring-boot-rest-api/README.md">
+# Module 06: Spring Boot REST API
+
+## Why this module exists
+
+A REST controller turns HTTP requests into application calls and turns results into HTTP responses. The example gives the order service a small public contract before persistence and security complicate the implementation.
+
+## Prerequisites
+
+- Modules 01–05.
+- Familiarity with JSON request and response bodies.
+
+## What you will learn
+
+- What `@RestController`, `@RequestMapping`, and HTTP method mappings do.
+- Why request and response records are API contracts, not database entities.
+- The difference between `200 OK`, `201 Created`, and `404 Not Found`.
+
+## Learn by doing
+
+Start `OrdersApiApplication`, then use curl or an HTTP client to call `POST /orders`, `GET /orders`, `GET /orders/{id}`, and `PATCH /orders/{id}/status`. Read the comments in `OrderController` before replacing its local map with a service.
+
+## Key idea
+
+The controller should coordinate HTTP concerns. Business rules belong in a service, which later modules can test without starting an HTTP server.
+
+## Next
+
+Continue to [Module 07](../07-persistence-hibernate-jpa/README.md).
+</file>
+
+<file path="modules/07-persistence-hibernate-jpa/01-objectives/README.md">
+# Objectives
+Map the order aggregate to JPA entities and understand transactions, repositories, and lazy loading.
+</file>
+
+<file path="modules/07-persistence-hibernate-jpa/02-concepts/01-entity-and-repository.java">
+package examples;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+@Entity
+class CustomerOrder {
+    @Id String id; // The primary key identifies this row independently of its other values.
+    String customerId;
+}
+
+interface CustomerOrderRepository extends JpaRepository<CustomerOrder, String> {
+    // Spring Data derives a WHERE customer_id = ? query from this method name.
+    java.util.List<CustomerOrder> findByCustomerId(String customerId);
+}
+</file>
+
+<file path="modules/07-persistence-hibernate-jpa/02-concepts/README.md">
+# Concepts
+Use entity identity for persistence, transactions for unit-of-work boundaries, and H2 for a local exercise database.
+</file>
+
+<file path="modules/07-persistence-hibernate-jpa/03-exercises/README.md">
+# Exercise
+Use `OrderEntity` and `OrderJpaRepository` in `src/main/java` as the reference mapping. Add a `@DataJpaTest` that saves an entity and verifies `findByCustomerId` returns it.
+</file>
+
+<file path="modules/07-persistence-hibernate-jpa/04-verification/checklist.md">
+- [ ] Schema and relationships are explicit
+- [ ] Transaction boundaries are tested
+</file>
+
+<file path="modules/07-persistence-hibernate-jpa/src/main/java/com/learning/java/orders/persistence/OrderEntity.java">
+package com.learning.java.orders.persistence;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import java.math.BigDecimal;
+
+/** Persistence representation. Keep it separate from the public REST response contract. */
+@Entity(name = "orders")
+public class OrderEntity {
+    @Id private String id;
+    private String customerId;
+    private BigDecimal total;
+    private String status;
+    // Hibernate needs a no-argument constructor to materialize rows via reflection.
+    protected OrderEntity() { }
+    public OrderEntity(String id, String customerId, BigDecimal total, String status) { this.id = id; this.customerId = customerId; this.total = total; this.status = status; }
+    public String getId() { return id; }
+    public String getCustomerId() { return customerId; }
+    public BigDecimal getTotal() { return total; }
+    public String getStatus() { return status; }
+}
+</file>
+
+<file path="modules/07-persistence-hibernate-jpa/src/main/java/com/learning/java/orders/persistence/OrderJpaRepository.java">
+package com.learning.java.orders.persistence;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.List;
+
+public interface OrderJpaRepository extends JpaRepository<OrderEntity, String> {
+    List<OrderEntity> findByCustomerId(String customerId);
+}
+</file>
+
+<file path="modules/07-persistence-hibernate-jpa/README.md">
+# Module 07: Persistence with Hibernate and JPA
+
+## Why this module exists
+
+In-memory data disappears on restart. JPA maps Java objects to relational tables so a repository can load and store data behind a stable interface.
+
+## Prerequisites
+
+- Module 06: REST APIs and service boundaries.
+- Basic SQL concepts: table, row, primary key.
+
+## What you will learn
+
+- What `@Entity` and `@Id` mean to Hibernate.
+- How Spring Data derives a query from `findByCustomerId`.
+- Why database entities and external API DTOs should not be the same class.
+- The role of transactions and lazy loading.
+
+## Learn by doing
+
+Inspect `OrderEntity` and `OrderJpaRepository`, then write a `@DataJpaTest` with H2. Persist two customers and prove that `findByCustomerId` returns only the requested customer’s order.
+
+## Common pitfall
+
+Do not expose JPA entities directly from a controller. That leaks persistence choices and can trigger unexpected lazy loads during JSON serialization.
+
+## Next
+
+Continue to [Module 08](../08-enterprise-api-quality/README.md).
+</file>
+
+<file path="modules/08-enterprise-api-quality/01-objectives/README.md">
+# Objectives
+Add validation, structured errors, pagination, configuration, and useful logging.
+</file>
+
+<file path="modules/08-enterprise-api-quality/02-concepts/01-validation-and-errors.java">
+package examples;
+
+import jakarta.validation.constraints.NotBlank;
+import org.springframework.web.bind.annotation.*;
+
+record CreateOrderRequest(@NotBlank String customerId) { }
+
+@RestControllerAdvice
+class ErrorAdvice {
+    @ExceptionHandler(IllegalArgumentException.class)
+    // One place translates a domain exception into an API-shaped error response.
+    java.util.Map<String, String> invalidInput(IllegalArgumentException error) {
+        return java.util.Map.of("error", "invalid_request", "message", error.getMessage());
+    }
+}
+</file>
+
+<file path="modules/08-enterprise-api-quality/02-concepts/README.md">
+# Concepts
+Stable error payloads and pageable queries make APIs predictable for clients and operators.
+</file>
+
+<file path="modules/08-enterprise-api-quality/03-exercises/README.md">
+# Exercise
+Connect `CreateOrderRequest` and `ApiExceptionHandler` to the REST controller. Add `@Valid` to the request parameter, then return a pageable list representation from `GET /orders`.
+</file>
+
+<file path="modules/08-enterprise-api-quality/04-verification/checklist.md">
+- [ ] Invalid requests return field-level errors
+- [ ] Pagination metadata is present
+</file>
+
+<file path="modules/08-enterprise-api-quality/src/main/java/com/learning/java/orders/quality/ApiExceptionHandler.java">
+package com.learning.java.orders.quality;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
+import java.util.Map;
+
+/** Centralising error mapping keeps controllers focused on successful use cases. */
+@RestControllerAdvice
+public final class ApiExceptionHandler {
+    @ExceptionHandler(IllegalArgumentException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    Map<String, String> invalidRequest(IllegalArgumentException exception) { return Map.of("error", "invalid_request", "message", exception.getMessage()); }
+}
+</file>
+
+<file path="modules/08-enterprise-api-quality/src/main/java/com/learning/java/orders/quality/CreateOrderRequest.java">
+package com.learning.java.orders.quality;
+
+import jakarta.validation.constraints.DecimalMin;
+import jakarta.validation.constraints.NotBlank;
+import java.math.BigDecimal;
+
+/** Transport contract: annotations are evaluated when a controller uses this record with {@code @Valid}. */
+public record CreateOrderRequest(@NotBlank String customerId, @DecimalMin(value = "0.01") BigDecimal total) { }
+</file>
+
+<file path="modules/08-enterprise-api-quality/README.md">
+# Module 08: Enterprise API Quality
+
+## Why this module exists
+
+Clients need predictable validation errors and stable pagination contracts. Operators need useful configuration and logs. These concerns turn a demo endpoint into a dependable API boundary.
+
+## Prerequisites
+
+- Modules 06–07.
+
+## What you will learn
+
+- Bean Validation annotations such as `@NotBlank` and `@DecimalMin`.
+- Centralised error mapping with `@RestControllerAdvice`.
+- Why a paginated endpoint needs both data and navigation metadata.
+- What belongs in configuration rather than code.
+
+## Learn by doing
+
+Apply `@Valid` to a create request in the REST module. Send an invalid payload and compare the response with a valid request. Then add page and size query parameters to the list endpoint.
+
+## Key idea
+
+An API error is part of the contract. A caller should not need to parse a stack trace or guess whether to retry.
+
+## Next
+
+Continue to [Module 09](../09-security-observability-production/README.md).
+</file>
+
+<file path="modules/09-security-observability-production/01-objectives/README.md">
+# Objectives
+Protect write operations and expose health and metrics suitable for deployment.
+</file>
+
+<file path="modules/09-security-observability-production/02-concepts/01-authentication-vs-authorization.java">
+package examples;
+
+/*
+Authentication asks "who is this caller?". Authorization asks "may this caller perform this action?".
+
+For the order API:
+  GET /orders           -> public in this learning example
+  POST /orders          -> requires an authenticated caller
+  PATCH /orders/{id}    -> requires an authenticated caller
+  GET /actuator/health  -> public so orchestration can check readiness
+
+The module's SecurityConfiguration implements those HTTP method and path rules.
+*/
+final class AuthenticationVsAuthorization { }
+</file>
+
+<file path="modules/09-security-observability-production/02-concepts/README.md">
+# Concepts
+Authentication identifies a caller; authorization decides access. Health checks should report dependency readiness without leaking secrets.
+</file>
+
+<file path="modules/09-security-observability-production/03-exercises/README.md">
+# Exercise
+Apply `SecurityConfiguration` to the REST application. Verify that GET requests and `/actuator/health` remain public while POST and PATCH requests require an authenticated user.
+</file>
+
+<file path="modules/09-security-observability-production/04-verification/checklist.md">
+- [ ] Unauthenticated writes are rejected
+- [ ] Health endpoint is available
+- [ ] Secrets are externalized
+</file>
+
+<file path="modules/09-security-observability-production/src/main/java/com/learning/java/orders/security/SecurityConfiguration.java">
+package com.learning.java.orders.security;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.Customizer;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.http.HttpMethod;
+
+/** Read operations are public for the exercise; only state-changing order routes need credentials. */
+@Configuration
+public class SecurityConfiguration {
+    @Bean SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        return http.csrf(csrf -> csrf.disable())
+                .authorizeHttpRequests(requests -> requests
+                        // Infrastructure must check health without a user session or application credential.
+                        .requestMatchers("/actuator/health").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/orders", "/orders/**").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/orders").authenticated()
+                        .requestMatchers(HttpMethod.PATCH, "/orders/**").authenticated()
+                        .anyRequest().authenticated())
+                .httpBasic(Customizer.withDefaults()).build();
+    }
+}
+</file>
+
+<file path="modules/09-security-observability-production/README.md">
+# Module 09: Security, Observability, and Production Readiness
+
+## Why this module exists
+
+Production services must control who can modify data and must expose enough operational information for a platform to decide whether the service is healthy.
+
+## Prerequisites
+
+- Modules 06–08.
+
+## What you will learn
+
+- The difference between authentication and authorization.
+- How URL and HTTP-method rules protect order writes.
+- Why health checks must remain available without application credentials.
+- How Actuator separates operational endpoints from business endpoints.
+
+## Learn by doing
+
+Apply `SecurityConfiguration` to the API. Verify `GET /orders` remains public, while POST and PATCH return `401` without credentials. Visit `GET /actuator/health` and inspect only the status.
+
+## Security note
+
+HTTP Basic in this module is a learning mechanism, not a recommended production identity system. Real systems commonly use an identity provider and short-lived bearer tokens.
+
+## Next
+
+Continue to [Module 10](../10-android-java-orientation/README.md).
+</file>
+
+<file path="modules/10-android-java-orientation/01-objectives/README.md">
+# Objectives
+Relate Java classes, lifecycle, and networking to Android without installing the Android SDK.
+</file>
+
+<file path="modules/10-android-java-orientation/02-concepts/01-order-screen-state.java">
+package examples;
+
+/*
+Android UI must represent work that finishes later. Model it explicitly instead of using several
+unrelated boolean flags, which can accidentally describe impossible states such as loading + error.
+*/
+sealed interface OrderScreenState permits Loading, Content, Failure { }
+record Loading() implements OrderScreenState { }
+record Content(java.util.List<String> orderIds) implements OrderScreenState { }
+record Failure(String message) implements OrderScreenState { }
+</file>
+
+<file path="modules/10-android-java-orientation/02-concepts/README.md">
+# Concepts
+Activities render screens; services coordinate background work. Android adds lifecycle and resource constraints absent from a server.
+</file>
+
+<file path="modules/10-android-java-orientation/03-exercises/README.md">
+# Exercise
+Design an Android client flow that consumes the order API and handles loading, failure, and rotation.
+</file>
+
+<file path="modules/10-android-java-orientation/04-verification/checklist.md">
+- [ ] Lifecycle states are accounted for
+- [ ] Network work is off the UI thread
+</file>
+
+<file path="modules/10-android-java-orientation/README.md">
+# Module 10: Android Java Orientation
+
+## Why this module exists
+
+Java knowledge transfers to Android, but Android programs have lifecycle and battery constraints that backend services do not. This orientation module deliberately needs no Android SDK.
+
+## Prerequisites
+
+- Java classes, interfaces, collections, and HTTP concepts from modules 01–06.
+
+## What you will learn
+
+- How an Activity coordinates a screen and a ViewModel holds UI state.
+- Why network work cannot run on the main thread.
+- How the order API becomes a client dependency rather than local service code.
+- Why device rotation and process recreation change application design.
+
+## Learn by doing
+
+Draw three states for an order-list screen: loading, content, and error. For each state, decide what the user sees and which order API call led to it.
+
+## Next
+
+Continue to [Module 11](../11-big-data-java-orientation/README.md).
+</file>
+
+<file path="modules/11-big-data-java-orientation/01-objectives/README.md">
+# Objectives
+Explain JVM-based data platforms and simulate a partitioned order-event aggregation locally.
+</file>
+
+<file path="modules/11-big-data-java-orientation/02-concepts/01-local-to-distributed.java">
+package examples;
+
+import java.math.BigDecimal;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+final class LocalToDistributed {
+    record Event(String customerId, BigDecimal amount) { }
+    static Map<String, BigDecimal> aggregate(List<Event> events) {
+        // This local grouping has the same logical shape as a distributed key-by/customer reduction.
+        return events.stream().collect(Collectors.groupingBy(Event::customerId,
+                Collectors.reducing(BigDecimal.ZERO, Event::amount, BigDecimal::add)));
+    }
+}
+</file>
+
+<file path="modules/11-big-data-java-orientation/02-concepts/README.md">
+# Concepts
+Batch jobs process bounded input; streaming handles unbounded events. Partitioning enables parallelism, while serialization defines interchange costs.
+</file>
+
+<file path="modules/11-big-data-java-orientation/03-exercises/src/main/java/com/learning/java/exercises/OrderEventAnalytics.java">
+package com.learning.java.exercises;
+
+import java.math.BigDecimal;
+import java.util.List;
+import java.util.Map;
+
+public final class OrderEventAnalytics {
+    public record OrderEvent(String customerId, BigDecimal amount) { }
+    // This local method models the same key-and-reduce shape used by distributed processing engines.
+    public Map<String, BigDecimal> revenueByCustomer(List<OrderEvent> events) { return Map.of(); }
+}
+</file>
+
+<file path="modules/11-big-data-java-orientation/03-exercises/README.md">
+# Exercise
+Complete `src/main/java/com/learning/java/exercises/OrderEventAnalytics.java`. Group local order events by customer, then compare with the stream-based reference under `solutions/` and map it to a Spark `groupByKey`/reduction.
+</file>
+
+<file path="modules/11-big-data-java-orientation/04-verification/checklist.md">
+- [ ] Aggregation is deterministic
+- [ ] Mapping to map/filter/reduce is documented
+</file>
+
+<file path="modules/11-big-data-java-orientation/solutions/src/main/java/com/learning/java/solutions/OrderEventAnalytics.java">
+package com.learning.java.solutions;
+
+import java.math.BigDecimal;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+public final class OrderEventAnalytics {
+    public record OrderEvent(String customerId, BigDecimal amount) { }
+    public Map<String, BigDecimal> revenueByCustomer(List<OrderEvent> events) {
+        return events.stream().collect(Collectors.groupingBy(OrderEvent::customerId, Collectors.reducing(BigDecimal.ZERO, OrderEvent::amount, BigDecimal::add)));
+    }
+}
+</file>
+
+<file path="modules/11-big-data-java-orientation/README.md">
+# Module 11: Big Data Java Orientation
+
+## Why this module exists
+
+Hadoop and Spark are JVM ecosystems, but learning their distributed deployment is not required to understand their data transformations. The local event exercise mirrors a grouped revenue aggregation without a cluster.
+
+## Prerequisites
+
+- Module 03: streams and reductions.
+
+## What you will learn
+
+- The difference between batch input and an unbounded stream.
+- How grouping and reduction map to distributed data processing.
+- Why partitioning and serialization affect throughput.
+
+## Learn by doing
+
+Implement `OrderEventAnalytics.revenueByCustomer`. Then describe a Spark version: map each event to a customer/amount pair, group by customer, and reduce each group into a sum.
+
+## Next
+
+Continue to [Module 12](../12-capstone-enterprise-orders/README.md).
+</file>
+
+<file path="modules/12-capstone-enterprise-orders/01-objectives/README.md">
+# Objectives
+Combine domain modelling, service boundaries, persistence seams, API quality, security, health, and reporting.
+</file>
+
+<file path="modules/12-capstone-enterprise-orders/02-concepts/01-hexagonal-seam.java">
+package examples;
+
+/*
+OrderService depends on the OrderRepository abstraction, not on a database implementation.
+That seam keeps domain tests fast: use InMemoryOrderRepository in unit tests and add a JPA adapter
+later without changing OrderService's business operations.
+*/
+interface OrderRepository { }
+final class OrderService {
+    private final OrderRepository repository;
+    OrderService(OrderRepository repository) { this.repository = repository; }
+}
+</file>
+
+<file path="modules/12-capstone-enterprise-orders/02-concepts/README.md">
+# Concepts
+The capstone keeps a framework-neutral core so the same service can be adapted to Spring MVC, JPA, Security, and Actuator.
+</file>
+
+<file path="modules/12-capstone-enterprise-orders/03-exercises/README.md">
+# Exercise
+Run `CapstoneApplication` and exercise the implemented `OrderApiController`. Then replace the in-memory repository with the JPA module, add validated request DTOs, apply the security module, and add revenue reporting incrementally.
+</file>
+
+<file path="modules/12-capstone-enterprise-orders/04-verification/checklist.md">
+- [ ] Create, read, list, and status change work
+- [ ] Totals are calculated with decimal arithmetic
+- [ ] Service tests pass with an in-memory repository
+
+Run the capstone test with `./gradlew :modules:12-capstone-enterprise-orders:test`.
+</file>
+
+<file path="modules/12-capstone-enterprise-orders/src/main/java/com/learning/java/orders/api/CapstoneApplication.java">
+package com.learning.java.orders.api;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class CapstoneApplication {
+    public static void main(String[] args) { SpringApplication.run(CapstoneApplication.class, args); }
+}
+</file>
+
+<file path="modules/12-capstone-enterprise-orders/src/main/java/com/learning/java/orders/api/OrderApiController.java">
+package com.learning.java.orders.api;
+
+import com.learning.java.orders.domain.*;
+import com.learning.java.orders.service.OrderService;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
+import java.math.BigDecimal;
+import java.util.List;
+
+/** Spring adapter that converts JSON requests into the framework-independent order service calls. */
+@RestController
+@RequestMapping("/orders")
+public final class OrderApiController {
+    private final OrderService orders;
+    public OrderApiController(OrderService orders) { this.orders = orders; }
+    @GetMapping public List<Order> list() { return orders.list(); }
+    @GetMapping("/{id}") public Order get(@PathVariable String id) { return orders.get(id); }
+    @PostMapping @ResponseStatus(HttpStatus.CREATED) public Order create(@RequestBody CreateOrderRequest request) {
+        // Keep conversion at the HTTP boundary so OrderService receives domain objects only.
+        var product = new Product(request.productId(), request.productName(), new Money(request.unitPrice(), request.currency()));
+        return orders.create(new Order(null, new Customer(request.customerId(), request.email()), List.of(new OrderItem(product, request.quantity())), OrderStatus.NEW));
+    }
+    @PatchMapping("/{id}/status") public Order updateStatus(@PathVariable String id, @RequestBody StatusRequest request) { return orders.changeStatus(id, request.status()); }
+    public record CreateOrderRequest(String customerId, String email, String productId, String productName, BigDecimal unitPrice, String currency, int quantity) { }
+    public record StatusRequest(OrderStatus status) { }
+}
+</file>
+
+<file path="modules/12-capstone-enterprise-orders/src/main/java/com/learning/java/orders/api/OrderBeans.java">
+package com.learning.java.orders.api;
+
+import com.learning.java.orders.service.*;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+/** This configuration wires a plain Java service into Spring without adding framework annotations to it. */
+@Configuration
+class OrderBeans {
+    @Bean OrderRepository orderRepository() { return new InMemoryOrderRepository(); }
+    @Bean OrderService orderService(OrderRepository repository) { return new OrderService(repository); }
+}
+</file>
+
+<file path="modules/12-capstone-enterprise-orders/src/main/java/com/learning/java/orders/domain/Customer.java">
+package com.learning.java.orders.domain;
+
+public record Customer(String id, String email) { }
+</file>
+
+<file path="modules/12-capstone-enterprise-orders/src/main/java/com/learning/java/orders/domain/Money.java">
+package com.learning.java.orders.domain;
+
+import java.math.BigDecimal;
+
+public record Money(BigDecimal amount, String currency) {
+    public Money { if (amount == null || amount.signum() < 0 || currency == null || currency.isBlank()) throw new IllegalArgumentException("Invalid money"); }
+}
+</file>
+
+<file path="modules/12-capstone-enterprise-orders/src/main/java/com/learning/java/orders/domain/Order.java">
+package com.learning.java.orders.domain;
+
+import java.math.BigDecimal;
+import java.util.List;
+import java.util.UUID;
+
+/** The capstone aggregate keeps its state immutable; changes create a replacement value. */
+public record Order(String id, Customer customer, List<OrderItem> items, OrderStatus status) {
+    public Order {
+        if (id == null || id.isBlank()) id = UUID.randomUUID().toString();
+        if (customer == null || items == null || items.isEmpty()) throw new IllegalArgumentException("Order requires customer and items");
+        // Prevent a mutable caller-owned list from changing this order after creation.
+        items = List.copyOf(items);
+        if (status == null) status = OrderStatus.NEW;
+    }
+    public BigDecimal total() { return items.stream().map(OrderItem::total).reduce(BigDecimal.ZERO, BigDecimal::add); }
+    /** Records are immutable, so a status transition returns a new Order value. */
+    public Order withStatus(OrderStatus next) { return new Order(id, customer, items, next); }
+}
+</file>
+
+<file path="modules/12-capstone-enterprise-orders/src/main/java/com/learning/java/orders/domain/OrderItem.java">
+package com.learning.java.orders.domain;
+
+import java.math.BigDecimal;
+
+public record OrderItem(Product product, int quantity) {
+    public OrderItem { if (product == null || quantity < 1) throw new IllegalArgumentException("Quantity must be positive"); }
+    public BigDecimal total() { return product.price().amount().multiply(BigDecimal.valueOf(quantity)); }
+}
+</file>
+
+<file path="modules/12-capstone-enterprise-orders/src/main/java/com/learning/java/orders/domain/OrderStatus.java">
+package com.learning.java.orders.domain;
+
+public enum OrderStatus { NEW, PAID, SHIPPED, CANCELLED }
+</file>
+
+<file path="modules/12-capstone-enterprise-orders/src/main/java/com/learning/java/orders/domain/Product.java">
+package com.learning.java.orders.domain;
+
+public record Product(String id, String name, Money price) { }
+</file>
+
+<file path="modules/12-capstone-enterprise-orders/src/main/java/com/learning/java/orders/service/InMemoryOrderRepository.java">
+package com.learning.java.orders.service;
+
+import com.learning.java.orders.domain.Order;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+
+/** Thread-safe learning implementation; production persistence is introduced in the JPA module. */
+public final class InMemoryOrderRepository implements OrderRepository {
+    private final Map<String, Order> orders = new ConcurrentHashMap<>();
+    public Order save(Order order) { orders.put(order.id(), order); return order; }
+    public Optional<Order> findById(String id) { return Optional.ofNullable(orders.get(id)); }
+    public List<Order> findAll() { return orders.values().stream().sorted(Comparator.comparing(Order::id)).toList(); }
+}
+</file>
+
+<file path="modules/12-capstone-enterprise-orders/src/main/java/com/learning/java/orders/service/OrderRepository.java">
+package com.learning.java.orders.service;
+
+import com.learning.java.orders.domain.Order;
+import java.util.*;
+
+/** A persistence seam: OrderService depends on this contract, not a specific storage technology. */
+public interface OrderRepository {
+    Order save(Order order);
+    Optional<Order> findById(String id);
+    List<Order> findAll();
+}
+</file>
+
+<file path="modules/12-capstone-enterprise-orders/src/main/java/com/learning/java/orders/service/OrderService.java">
+package com.learning.java.orders.service;
+
+import com.learning.java.orders.domain.*;
+import java.util.List;
+import java.util.NoSuchElementException;
+
+/** Application service: coordinates use cases while keeping HTTP and storage concerns outside. */
+public final class OrderService {
+    private final OrderRepository repository;
+    public OrderService(OrderRepository repository) { this.repository = repository; }
+    public Order create(Order order) { return repository.save(order); }
+    // The repository expresses absence with Optional; the service translates it into a use-case failure.
+    public Order get(String id) { return repository.findById(id).orElseThrow(() -> new NoSuchElementException("Order not found: " + id)); }
+    public Order changeStatus(String id, OrderStatus status) { return repository.save(get(id).withStatus(status)); }
+    public List<Order> list() { return repository.findAll(); }
+}
+</file>
+
+<file path="modules/12-capstone-enterprise-orders/src/test/java/com/learning/java/orders/OrderServiceTest.java">
+package com.learning.java.orders;
+
+import com.learning.java.orders.domain.*;
+import com.learning.java.orders.service.*;
+import org.junit.jupiter.api.Test;
+import java.math.BigDecimal;
+import java.util.List;
+import static org.junit.jupiter.api.Assertions.*;
+
+class OrderServiceTest {
+    @Test void createsTotalsAndChangesStatus() {
+        var product = new Product("p-1", "Keyboard", new Money(new BigDecimal("25.00"), "USD"));
+        var order = new Order("o-1", new Customer("c-1", "user@example.com"), List.of(new OrderItem(product, 2)), null);
+        var service = new OrderService(new InMemoryOrderRepository());
+        assertEquals(new BigDecimal("50.00"), service.create(order).total());
+        assertEquals(OrderStatus.PAID, service.changeStatus("o-1", OrderStatus.PAID).status());
+    }
+}
+</file>
+
+<file path="modules/12-capstone-enterprise-orders/README.md">
+# Module 12: Capstone Enterprise Orders Service
+
+## Why this module exists
+
+This module assembles the course’s ideas into an order service with a framework-independent core and a Spring Boot adapter. It is intentionally small enough to read end-to-end and change safely.
+
+## Prerequisites
+
+- Modules 01–09. Module 11 is helpful for the reporting extension.
+
+## What you will build
+
+- An immutable order domain with decimal money calculations.
+- A repository abstraction and an in-memory implementation.
+- An `OrderService` for create, read, list, and status transitions.
+- Spring MVC endpoints for the four order operations.
+- A Spring Boot application entry point, ready for Actuator and security integration.
+
+## Learn by doing
+
+Run `./gradlew :modules:12-capstone-enterprise-orders:bootRun`. Create an order with `POST /orders`, retain its returned ID, then get it and change its status. Read `OrderBeans` to see how the framework-independent service becomes a Spring bean.
+
+## Extension path
+
+Replace `InMemoryOrderRepository` with the JPA repository, validate `CreateOrderRequest`, apply the security rules, then add a revenue summary endpoint.
+</file>
+
+<file path=".gitignore">
+.gradle/
+build/
+**/build/
+.idea/
+*.iml
+.DS_Store
+out/
+</file>
+
+<file path="BACKGROUND.md">
+# Why Java?
+
+Java remains a useful backend foundation because the JVM offers mature libraries, predictable operational tooling, and a large ecosystem. The same language and runtime concepts transfer to Spring services, Android application layers, and Hadoop/Spark jobs. This course starts with language fundamentals, then adds the boundaries and operational practices expected in enterprise systems.
+</file>
+
+<file path="build.gradle.kts">
+plugins {
+    java
+    id("org.springframework.boot") version "3.3.5" apply false
+}
+
+allprojects { group = "com.learning.java"; version = "1.0.0" }
+
+subprojects {
+    apply(plugin = "java")
+    java { toolchain { languageVersion.set(JavaLanguageVersion.of(17)) } }
+    repositories { mavenCentral() }
+    dependencies { "testImplementation"("org.junit.jupiter:junit-jupiter:5.10.2") }
+    tasks.withType<Test>().configureEach { useJUnitPlatform() }
+}
+
+project(":modules:06-spring-boot-rest-api") {
+    apply(plugin = "org.springframework.boot")
+    dependencies {
+        "implementation"(project(":modules:01-java-refresh-oop"))
+        "implementation"("org.springframework.boot:spring-boot-starter-web")
+        "testImplementation"("org.springframework.boot:spring-boot-starter-test")
+    }
+}
+
+project(":modules:07-persistence-hibernate-jpa") {
+    dependencies {
+        "implementation"("org.springframework.boot:spring-boot-starter-data-jpa:3.3.5")
+        "runtimeOnly"("com.h2database:h2:2.2.224")
+    }
+}
+
+project(":modules:08-enterprise-api-quality") {
+    dependencies {
+        "implementation"("org.springframework.boot:spring-boot-starter-web:3.3.5")
+        "implementation"("org.springframework.boot:spring-boot-starter-validation:3.3.5")
+    }
+}
+
+project(":modules:09-security-observability-production") {
+    dependencies {
+        "implementation"("org.springframework.boot:spring-boot-starter-security:3.3.5")
+        "implementation"("org.springframework.boot:spring-boot-starter-actuator:3.3.5")
+    }
+}
+
+project(":modules:12-capstone-enterprise-orders") {
+    apply(plugin = "org.springframework.boot")
+    dependencies {
+        "implementation"("org.springframework.boot:spring-boot-starter-web")
+        "implementation"("org.springframework.boot:spring-boot-starter-actuator")
+        "testImplementation"("org.springframework.boot:spring-boot-starter-test")
+    }
+}
+</file>
+
+<file path="CLAUDE.md">
+# Contributor guidance
+
+Keep lessons runnable on Java 17. Every module must contain `01-objectives`, `02-concepts`, `03-exercises`, and `04-verification`. Prefer small examples tied to orders, customers, products, and events. Put answers in a clearly labelled `solutions/` directory and keep setup requirements explicit.
+</file>
+
+<file path="gradlew">
+#!/bin/sh
+
+# The wrapper downloads and runs the Gradle version pinned in gradle-wrapper.properties.
+APP_HOME=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+exec java -classpath "$APP_HOME/gradle/wrapper/gradle-wrapper.jar" org.gradle.wrapper.GradleWrapperMain "$@"
+</file>
+
+<file path="gradlew.bat">
+@echo off
+set APP_HOME=%~dp0
+java -classpath "%APP_HOME%gradle\wrapper\gradle-wrapper.jar" org.gradle.wrapper.GradleWrapperMain %*
+</file>
+
+<file path="plan-implementation-java-learning-module.md">
+# Java Learning Module Implementation Plan
+
+## Summary
+
+Create a lightweight, module-based Java learning project in `/Users/mirzaaziz/workspace/java-learning-module`, modeled after the Python reference project’s structure:
+
+```text
+README.md
+modules/<module-name>/{01-objectives,02-concepts,03-exercises,04-verification}
+```
+
+The course targets backend engineers with basic Java knowledge and takes them from practical core Java through enterprise backend readiness. Runnable hands-on work focuses on Java and Spring Boot. Android and Big Data are included as transfer/application modules without requiring Android SDK, Hadoop, Spark clusters, or heavy local setup.
+
+**Defaults chosen:**
+
+- Java baseline: Java 17 LTS
+- Build tool: Gradle Wrapper
+- Domain: e-commerce orders
+- Exercise format: starter code plus solution files
+- Scope: 13 modules (`00`–`12`)
+
+## Key Changes
+
+- Add root project documentation:
+  - `README.md` — course map, prerequisites, setup, module order, expected outcomes
+  - `BACKGROUND.md` — why Java matters for backend, Android, enterprise systems, and data platforms
+  - `CLAUDE.md` — contributor guidance for maintaining the learning module style
+  - `.gitignore` — Gradle, IDE, build, and OS artifacts
+
+- Add a root Gradle build:
+  - `settings.gradle.kts`
+  - `build.gradle.kts`
+  - `gradlew`, `gradlew.bat`, `gradle/wrapper/*`
+  - Use Java 17 toolchain
+  - Use JUnit 5 for runnable exercises
+  - Use Spring Boot only in Spring modules
+  - Avoid a global Gradle dependency (local system Gradle currently fails); learners use `./gradlew`
+
+- Use the same learning structure for each module:
+  - `01-objectives/README.md`
+  - `02-concepts/*.md`
+  - `03-exercises/*.md`
+  - Runnable starter code under `src/main/java` or `src/test/java` where useful
+  - Solution code under `solutions/`
+  - `04-verification/checklist.md`
+
+## Module Plan
+
+1. **00-setup-java-gradle**
+   - Install/verify JDK 17, explain JVM/JDK/JRE, run `./gradlew test`
+   - Explain Gradle wrapper, project layout, and IDE import
+
+2. **01-java-refresh-oop**
+   - Classes, records, interfaces, enums, packages, access modifiers
+   - Exercise: model `Product`, `Customer`, `Order`, and `OrderStatus`
+
+3. **02-collections-generics-optionals**
+   - Lists, maps, sets, generics, `Optional`, equality, immutability basics
+   - Exercise: calculate order totals and group orders by customer/status
+
+4. **03-functional-java-streams**
+   - Lambdas, method references, streams, collectors, predicates
+   - Exercise: filter, aggregate, and summarize e-commerce orders
+
+5. **04-exceptions-validation-testing**
+   - Checked vs unchecked exceptions, validation boundaries, JUnit 5, assertions
+   - Exercise: validate order placement rules with unit tests
+
+6. **05-concurrency-and-jvm-basics**
+   - Threads, executors, futures, synchronization risks, JVM memory basics
+   - Exercise: process order notifications concurrently with deterministic tests
+
+7. **06-spring-boot-rest-api**
+   - Controllers, services, DTOs, dependency injection, request/response flow
+   - Exercise: build CRUD-style order endpoints
+
+8. **07-persistence-hibernate-jpa**
+   - Entities, repositories, transactions, lazy loading, schema basics
+   - Exercise: persist orders with Spring Data JPA and H2
+
+9. **08-enterprise-api-quality**
+   - Validation, error handling, pagination, configuration, logging
+   - Exercise: add request validation, structured errors, and pageable order search
+
+10. **09-security-observability-production**
+    - Authentication concepts, Spring Security basics, actuator, health checks, metrics
+    - Exercise: protect write endpoints and expose operational health
+
+11. **10-android-java-orientation**
+    - How Java maps to Android app architecture, activities/services at a high level, constraints vs backend Java
+    - Exercise: design-only walkthrough for consuming the order API from an Android client; no Android SDK required
+
+12. **11-big-data-java-orientation**
+    - JVM role in Hadoop/Spark ecosystems, batch vs streaming concepts, serialization, partitioning
+    - Exercise: local Java-only analytics simulation over order events; explain how it maps to Spark jobs
+
+13. **12-capstone-enterprise-orders**
+    - Consolidate prior modules into a small Spring Boot order service
+    - Includes REST API, validation, persistence, tests, basic security, health checks, and analytics-style reporting
+
+## Public Interfaces And Project Shape
+
+- Root commands:
+  - `./gradlew test`
+  - `./gradlew :modules:06-spring-boot-rest-api:test`
+  - `./gradlew :modules:12-capstone-enterprise-orders:bootRun`
+
+- Package naming:
+  - `com.learning.java.core`
+  - `com.learning.java.orders`
+  - `com.learning.java.orders.api`
+  - `com.learning.java.orders.domain`
+  - `com.learning.java.orders.persistence`
+  - `com.learning.java.orders.service`
+
+- Core domain types:
+  - `Product`
+  - `Customer`
+  - `Order`
+  - `OrderItem`
+  - `OrderStatus`
+  - `Money`
+  - `OrderService`
+  - `OrderRepository`
+
+- Spring API shape:
+  - `GET /orders`
+  - `GET /orders/{id}`
+  - `POST /orders`
+  - `PATCH /orders/{id}/status`
+  - `GET /actuator/health`
+
+- Keep examples intentionally small:
+  - In-memory repositories in early modules
+  - H2 database for persistence modules
+  - No Docker requirement in v1
+  - No real payment, real auth provider, Android SDK, Hadoop, or Spark runtime
+
+## Test Plan
+
+- Root verification:
+  - `./gradlew test` passes for all runnable modules
+  - Each module checklist includes exact commands and expected success signals
+
+- Unit tests:
+  - Domain modeling, collection operations, stream aggregations, validation, exception behavior, and concurrency behavior
+
+- Spring tests:
+  - Controller tests for HTTP status and JSON shape
+  - Service tests for order placement/status transitions
+  - Repository tests for JPA persistence
+  - Security tests for protected write endpoints
+
+- Documentation checks:
+  - README navigation links resolve to real module paths
+
+## Version Decisions
+
+- Java 17 is selected because it is installed locally and remains a Spring Boot-compatible enterprise baseline.
+- Newer Java 21/25 features can be mentioned in advanced notes, but runnable code stays on Java 17.
+- Spring Boot version should be pinned during implementation to a current supported version compatible with Java 17. Official Spring docs currently state Spring Boot 4.1 requires Java 17+ and supports Java 26, while Spring Boot 3.x also uses Java 17 as a baseline.
+- Gradle toolchains and the Gradle Wrapper will be used for reproducible builds, following Gradle’s official guidance.
+
+**References:**
+
+- [Oracle Java downloads](https://www.oracle.com/java/technologies/downloads/)
+- [Spring Boot system requirements](https://docs.spring.io/spring-boot/system-requirements.html)
+- [Gradle Java toolchains](https://docs.gradle.org/current/userguide/toolchains.html)
+</file>
+
+<file path="README.md">
+# Java Learning Module
+
+A practical Java 17 path for backend engineers, using an e-commerce orders domain. Each module has objectives, concepts, exercises, and verification. Work through `00` to `12` in order.
+
+## Prerequisites
+
+- JDK 17 (`java -version`)
+- A shell and an editor; no Android, Hadoop, or Spark installation is required
+
+Run `./gradlew test` to verify the complete course. Import the root directory as a Gradle project in your IDE.
+
+## Course map
+
+| Module | Focus |
+|---|---|
+| [00](modules/00-setup-java-gradle) | Java, JVM, Gradle setup |
+| [01](modules/01-java-refresh-oop) | OOP and domain modelling |
+| [02](modules/02-collections-generics-optionals) | Collections, generics, Optional |
+| [03](modules/03-functional-java-streams) | Lambdas and streams |
+| [04](modules/04-exceptions-validation-testing) | Exceptions and JUnit testing |
+| [05](modules/05-concurrency-and-jvm-basics) | Concurrency and JVM basics |
+| [06](modules/06-spring-boot-rest-api) | REST API design |
+| [07](modules/07-persistence-hibernate-jpa) | JPA persistence |
+| [08](modules/08-enterprise-api-quality) | API quality and validation |
+| [09](modules/09-security-observability-production) | Security and observability |
+| [10](modules/10-android-java-orientation) | Java on Android (orientation) |
+| [11](modules/11-big-data-java-orientation) | Java in big-data systems (orientation) |
+| [12](modules/12-capstone-enterprise-orders) | Capstone enterprise order service |
+
+The runnable examples deliberately use Java-only building blocks where possible. Spring Boot, JPA, Security, and Actuator are introduced as production integrations in the relevant lessons.
+
+## Exercise workflow
+
+Modules 02–05 and 11 contain an intentionally incomplete implementation in `03-exercises/src/main/java` and a completed answer in `solutions/src/main/java`. Implement the starter first, then compare it with the answer. Modules 06–09 provide focused framework examples; module 12 combines them into a runnable Spring Boot order API.
+</file>
+
+<file path="settings.gradle.kts">
+import org.gradle.api.initialization.resolve.RepositoriesMode
+
+pluginManagement { repositories { gradlePluginPortal(); mavenCentral() } }
+dependencyResolutionManagement { repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS); repositories { mavenCentral() } }
+rootProject.name = "java-learning-module"
+listOf("00-setup-java-gradle", "01-java-refresh-oop", "02-collections-generics-optionals", "03-functional-java-streams", "04-exceptions-validation-testing", "05-concurrency-and-jvm-basics", "06-spring-boot-rest-api", "07-persistence-hibernate-jpa", "08-enterprise-api-quality", "09-security-observability-production", "10-android-java-orientation", "11-big-data-java-orientation", "12-capstone-enterprise-orders").forEach { include(":modules:$it") }
+</file>
+
+</files>

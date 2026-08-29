@@ -1,0 +1,2 @@
+- [ ] Aggregation is deterministic
+- [ ] Mapping to map/filter/reduce is documented

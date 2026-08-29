@@ -1,0 +1,2 @@
+- [ ] Pipelines are side-effect free
+- [ ] Empty input has a defined result

@@ -1,0 +1,3 @@
+- [ ] Unknown IDs return 404
+- [ ] Create returns 201
+- [ ] JSON contracts are documented

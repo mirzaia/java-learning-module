@@ -1,0 +1,2 @@
+- [ ] Schema and relationships are explicit
+- [ ] Transaction boundaries are tested

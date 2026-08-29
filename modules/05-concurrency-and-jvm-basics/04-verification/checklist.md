@@ -1,0 +1,2 @@
+- [ ] Executor is shut down
+- [ ] Shared state has a clear ownership policy

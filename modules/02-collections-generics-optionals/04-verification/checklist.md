@@ -1,0 +1,2 @@
+- [ ] No null is returned for a missing order
+- [ ] Callers cannot mutate stored collections

@@ -1,0 +1,2 @@
+- [ ] Lifecycle states are accounted for
+- [ ] Network work is off the UI thread
